@@ -18,17 +18,11 @@
 }
 
 .fondo.rojo{
-    width: 1000px;
-    height: 1000px;
     background-color: red;
 }
 .fondo.verde{
-    width: 1000px;
-    height: 1000px;
     background-color: green;
 }
 .fondo.azul{
-    width: 1000px;
-    height: 1000px;
     background-color: blue;
 }
