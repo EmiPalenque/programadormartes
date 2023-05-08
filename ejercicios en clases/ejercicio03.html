@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <link rel="stylesheet" href= ejercicio03.css>
+    </head>
+    <body class="fondo">
+        
+        <p>
+            <button class="botonr" id="rojo"></button>
+            <button class="botonv" id="verde"></button>
+            <button class="botona" id="azul"></button>
+        </p>
+    </body>
+    <script>
+        const fondo = document.getElementsByClassName('fondo')[0];
+        const rojo = document.getElementById('rojo');
+        const verde = document.getElementById('verde');
+        const azul = document.getElementById('azul');
+
+        rojo.addEventListener('click', function() {
+            fondo.classList.remove('verde','azul')
+            fondo.classList.add('rojo');
+        });
+        verde.addEventListener('click', function() {
+            fondo.classList.remove('rojo','azul')
+            fondo.classList.add('verde');
+        });
+        azul.addEventListener('click', function() {
+            fondo.classList.remove('verde','rojo')
+            fondo.classList.add('azul');
+        });
+    </script>
+</html>
